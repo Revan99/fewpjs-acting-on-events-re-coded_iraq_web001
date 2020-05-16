@@ -1,8 +1,12 @@
 let dodger = document.querySelector('#dodger')
+document.addEventListener("DOMContentLoaded", function() {
+  console.log(dodger.style.right);
+  console.log(dodger.style.left);
+});
 function moveDodgerLeft() {
   let leftNumbers = dodger.style.left.replace("px", "");
   let left = parseInt(leftNumbers, 10);
-  console.log(dodger.style.right);
+  
   if (left > 0) {
     dodger.style.left = `${left - 1}px`;
   }
@@ -10,7 +14,7 @@ function moveDodgerLeft() {
 function moveDodgerRight() {
   let rightNumbers = dodger.style.right.replace("px", "");
   let right = parseInt(rightNumbers, 10);
-  console.log(dodger.style.right);
+  
   if (right > 0) {
     dodger.style.right = `${right + 1}px`;
   }
