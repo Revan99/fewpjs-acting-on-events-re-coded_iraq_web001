@@ -1,1 +1,1 @@
-document.querySelector('#dodger');
+let dodger = document.querySelector('#dodger');
